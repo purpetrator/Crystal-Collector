@@ -28,7 +28,7 @@
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
     </div>
 
-    <div id="random-number">Your random number: </div>
+    <div id="random-number">Goal Number: <span id="goal-number"></span></div>
 
     <div id="wins-losses">
         <p>Wins:</p>
@@ -43,12 +43,63 @@
     </div>
 
     <div id="your-score">
-        <p>Your total score is:</p>
+        <p>Your total score is: <span id="score"></span></p>
     </div>
 
 
     <!-- JQuery starts here -->
     <script type="text/javascript">
+
+        var totalScore = 0;
+        var wins = 0;
+        var losses = 0;
+        var targetNumber = 0;
+
+        // This will randomly choose targetNumber (between 19 and 120) and set it to our targetNumber
+        var random = Math.floor(Math.random() * 120) + 1;
+        console.log("Random number:" + random);
+        targetNumber = random;
+
+        // This is getting the span of the Goal Number and setting it to the text of the variable
+        $("#goal-number").text(targetNumber);
+
+
+
+        // Creating an on-click event that responds when user cliks a crystal
+        $(".crystal-image").on("click", function () {
+
+            // For now, it is increasing score by 10 per each click
+            totalScore += 10;
+
+            console.log(totalScore);
+
+            // Replace score span with updated total score
+            $("#score").text(totalScore);
+        });
+
+        // Setting up a WIN: If total score matches the goal number, you are alerted of a win
+        if (totalScore === targetNumber) {
+
+            // If the numbers match we'll celebrate the user's win.
+            alert("You win!");
+        }
+        else if (totalScore >= targetNumber) {
+
+            // Then they are alerted with a loss.
+            alert("You lose!!");
+        }
+
+
+
+
+// Computer generates random number between 19 and 120
+// Each crystal is assigned a random number between 1 and 12
+// When user clicks a crystal, it adds that assigned amount to the TOTAL SCORE
+// Win: 
+// Loss: 
+// Restart: 
+
+
 
 
 

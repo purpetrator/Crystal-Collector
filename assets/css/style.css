@@ -2,6 +2,18 @@ body {
   background-color: bisque;
 }
 
+#instructions {
+  background-color: lightpink;
+}
+
+#random-number {
+  font-size: 40px;
+}
+
+#your-score {
+  font-size: 40px;
+}
+
 .crystal-image {
   width: 200px;
   height: 200px;
