@@ -1,17 +1,62 @@
 body {
-  background-color: bisque;
+  background-color: #b8bacf;
+}
+
+#heading {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 46px;
+  text-align: center;
+  color: #302f4d;
+  margin: 20px;
+}
+
+#maindiv {
+  display: flex;
+  background-color: #999ac6;
+  width: 800px;
+  margin: 0 auto;
 }
 
 #instructions {
-  background-color: lightpink;
+  font-family: "Varela Round", sans-serif;
+  color: #2d3142;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 #random-number {
   font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+  color: #302f4d;
+  margin: 20px;
+}
+
+#main {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#wins-losses {
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  color: #302f4d;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  text-align: center;
 }
 
 #your-score {
   font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+  color: #302f4d;
 }
 
 .crystal-image {
