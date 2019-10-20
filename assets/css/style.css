@@ -13,18 +13,18 @@ body {
 #maindiv {
   display: flex;
   background-color: #999ac6;
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
 }
 
 #instructions {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Nobile", sans-serif;
+  font-size: 20px;
   color: #2d3142;
+  background-color: #999ac6;
   padding: 20px;
-  width: 500px;
+  width: 700px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   padding: 20px;
 }
 
@@ -45,18 +45,20 @@ body {
 
 #wins-losses {
   font-size: 30px;
-  font-family: "Ubuntu", sans-serif;
-  color: #302f4d;
+  font-family: "Baloo Bhai", cursive;
+  color: #b8bacf;
   display: flex;
   flex-direction: column;
   width: 280px;
   text-align: center;
+  background-color: #5c5d8d;
 }
 
 #your-score {
   font-size: 40px;
   font-family: "Luckiest Guy", cursive;
   color: #302f4d;
+  margin: 16px;
 }
 
 .crystal-image {
