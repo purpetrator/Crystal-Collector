@@ -1,5 +1,7 @@
 # JQuery Game
 
+> Deployed: https://purpetrator.github.io/Crystal-Collector/
+
 For this project I created a "Crystal Collector" game using JQuery.
 
 The goal of the game is to match the computer's randomly generated number without going over.
